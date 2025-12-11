@@ -106,7 +106,7 @@ def tf_initplan(
         )
         # Select or create terraform workspace
         result = subprocess.run(
-            ["terraform", "workspace", "select", "-or-create=True", workspace],
+            ["echo", "foo"],
             capture_output=not debug,
             text=True,
         )
